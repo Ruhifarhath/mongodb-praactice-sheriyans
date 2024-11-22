@@ -10,6 +10,13 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
+app.get("/read",(req,res)=>{
+    res.render("read")
+})
+app.post("/create",(req,res)=>{
+    res.render("read")
+})
+
 app.listen(3000,(req,res)=>{
     console.log("server is running")
 })
